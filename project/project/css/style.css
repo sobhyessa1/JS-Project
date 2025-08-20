@@ -1,0 +1,96 @@
+
+
+ 
+ /* start navbar */
+
+nav{
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.navbar-brand {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+.nav-item > a:hover{
+  text-decoration-line: underline;
+  text-decoration-color: #ff6f6f;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 2px;
+  color:black !important;
+} 
+
+.nav-item > a.activeted{
+    text-decoration-line: underline;
+     text-decoration-color:  #ff6f6f;
+     text-underline-offset: 8px;
+     text-decoration-thickness: 2px;
+     color:black !important;
+}
+.icons > a > i:hover{
+  color: #ff6f6f;
+  display: fixed;
+  
+}
+
+ /* end navbar */
+
+ /* start header */
+
+ .header{
+  background-color: #d9dadc;
+  height: 100vh;
+ }
+ /* .header h1{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+} */
+
+ .header h1 {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+ /* end header */
+
+/* section_details */
+.section_details{
+  background-color: black;
+}
+
+/* start cards */
+
+.card .card-color{
+  background-color: #f8f8f8;
+  height:250px;
+
+}
+.cards-img{
+  position: relative;
+}
+.cards-img img {
+  transition:all .4s ease;
+  width:60%;
+  height: 140px
+}
+.cards-img:hover > img{
+ transform: scale(1.2);
+ text-decoration: line-through;
+}
+
+/* start footer */
+footer > div {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+.color_footer{
+  background-color: #fbfbfb;
+}
+

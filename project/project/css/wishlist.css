@@ -1,0 +1,42 @@
+/* wishlist */
+.wishlist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+table {
+  font-size: 18px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 16px 24px;
+  text-align: left;
+}
+
+thead tr {
+  background-color: #087f5b;
+  color: #fff;
+}
+
+thead th {
+  width: 25%;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f8f9fa;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #e9ecef;
+}
+.product-name {
+  display: flex;
+  align-items: center;
+}
+.img-whishlist {
+  width: 80px;
+  height: 80px;
+}

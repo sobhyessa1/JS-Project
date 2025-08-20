@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products (Admin)</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/admin.css" />
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar d-flex flex-column p-3">
+    <h4 class="text-center mb-4">product store</h4>
+    <h6 class="mx-3"><span class="text-secondary"> Welcome</span>, Sayed</h6>
+    <hr />
+    <a href="product.html">Products</a>
+    <a href="categories.html">Categories</a>
+    <a href="orders.html">Orders</a>
+    <a href="add_user.html">form</a>
+    <button id= "BacktoStore">Back to Store</button>
+  </div>
+
+  <div class="content mt-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h2>Products</h2>
+      <a href="add_product.html" class="btn btn-primary">+ Add New Product</a>
+    </div>
+
+    <div class="table-responsive shadow">
+      <table class="table table-bordered align-middle text-center">
+        <thead class="table-dark">
+          <tr>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Description</th>
+            <th>Image</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="products-body"></tbody>
+      </table>
+    </div>
+  </div>
+
+ <script type="module" src="../../../product_admin.js"></script>
+
+  <script src="../js/bootstrap.bundle.min.js"></script>
+   <script type="module" src="../../../main.js"></script>
+</body>
+</html>

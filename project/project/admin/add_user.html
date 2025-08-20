@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>add user</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/admin.css">
+
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar d-flex flex-column p-3">
+    <h4 class="text-center mb-4">product store</h4>
+    <h6 class="mx-3"><span class="text-secondary"> Welcome</span>, Sayed</h6>
+    <hr>
+    <a href="../admin/product.html">Products</a>
+    <a href="../admin/categories.html">Categories</a>
+    <a href="../admin/orders.html">Orders</a>
+    <a href="../admin/add_user.html">form</a>
+    <a href="../home.html">Back to Store</a>
+  </div>
+
+<div class="container mt-5">
+      <section class="mb-4">
+      <div class="card">
+        <div class="card-header">
+          <h2 class="h5 mb-0">Add new Admin</h2>
+        </div>
+        <div class="card-body">
+          <!-- Alerts (initially hidden; JS will toggle display) -->
+          <div id="addAdminError" class="alert alert-danger" role="alert" style="display:none;"></div>
+          <div id="addAdminSuccess" class="alert alert-success" role="status" style="display:none;"></div>
+
+          <form id="addAdminForm" novalidate class="row g-3">
+            <div class="col-12 col-md-6">
+              <label for="adminName" class="form-label">Name</label>
+              <input type="text" id="adminName" class="form-control" required />
+            </div>
+            <div class="col-12 col-md-6">
+              <label for="adminEmail" class="form-label">Email</label>
+              <input type="email" id="adminEmail" class="form-control" required />
+            </div>
+            <div class="col-12 col-md-6">
+              <label for="adminPassword" class="form-label">Password</label>
+              <input type="password" id="adminPassword" class="form-control" required />
+            </div>
+            <div class="col-12 col-md-6">
+              <label for="adminConfirm" class="form-label">Confirm password</label>
+              <input type="password" id="adminConfirm" class="form-control" required />
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Add</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Users Table Card -->
+    <section>
+      <div class="card">
+        <div class="card-header">
+          <h2 class="h5 mb-1">All users</h2>
+          <p class="text-muted mb-0">View-only list (ID, name, email, role, created at)</p>
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-striped table-bordered table-hover align-middle mb-0">
+              <thead class="table-light">
+                <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">Role</th>
+                  <th scope="col">Created at</th>
+                </tr>
+              </thead>
+              <tbody id="usersTbody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+</div>
+
+<!-- Bootstrap JS -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+
+  <script type="module" src ="../../app.js"></script>
+  <script type="module" src="../../../main.js"></script>
+</body>
+</html>

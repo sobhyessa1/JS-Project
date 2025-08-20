@@ -1,0 +1,27 @@
+body {
+      min-height: 100vh;
+      display: flex;
+    }
+    .sidebar {
+      min-width: 220px;
+      max-width: 220px;
+      background-color: #343a40;
+      color: #fff;
+    }
+    .sidebar a {
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      padding: 10px 15px;
+    }
+    .sidebar a:hover {
+      background-color: #495057;
+    }
+    .content {
+      flex-grow: 1;
+      padding: 20px;
+    }
+    table img {
+      max-width: 60px;
+      border-radius: 5px;
+    }

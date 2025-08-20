@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;700&family=Work+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/cart.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- start nav -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fs-6 fixed-top py-md-3">
+      <div class="container-fluid">
+        <a id="shopping" href="" class="navbar-brand ms-md-4 ms-2 fs-3">
+          <i class="fa-brands fa-shopify"></i> SHOPPING
+        </a>
+
+        <button class="navbar-toggler me-md-4 me-2" data-bs-toggle="collapse" data-bs-target="#tap">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="tap" class="collapse navbar-collapse">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item mx-2"><a href="home.html" class="nav-link activeted">HOME</a></li>
+            <li class="nav-item mx-2"><a href="product.html" class="nav-link">PRODUCTS</a></li>
+            <li class="nav-item mx-2"><a href="" class="nav-link">ABOUT US</a></li>
+            <li class="nav-item mx-2"><a href="wishlist.html" class="nav-link">Wishlist</a></li>
+          </ul>
+          <div class="d-flex icons me-4">
+            <a href="" class="mx-3 px-2 fs-5 text-secondary"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="login.html" class="mx-3 px-2 fs-5 text-secondary"><i class="fa-regular fa-circle-user"></i></a>
+            <a href="cart.html" class="mx-3 px-2 fs-5 text-secondary"><i class="fa-solid fa-cart-shopping"></i></a>
+             <button  class ="btn btn-danger " id="logoutBtn"><i class="fa fa-sign-out" aria-hidden="true"></i></button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end nav -->
+
+    <div class="container my-5 py-5">
+      <h2 class="cart-title">Cart</h2>
+
+      <!-- Cart Header -->
+      <div class="row fw-bold border-bottom pb-2 mb-3 cart-header">
+        <div class="col-md-5">Product</div>
+        <div class="col-md-2 text-center">Quantity</div>
+        <div class="col-md-3 text-center">Subtotal</div>
+        <div class="col-md-2 text-center">Remove</div>
+      </div>
+
+      <!-- Layout -->
+      <div class="row">
+        <!-- Cart Items -->
+        <div class="col-12 col-lg-8" id="cart-container">
+          <!-- العناصر هتتضاف هنا -->
+        </div>
+
+        <!-- Checkout -->
+        <div class="col-12 col-lg-4 mt-4 mt-lg-0">
+          <div class="check-out p-4 border border-2">
+            <h5 class="cart-header">Cart totals</h5>
+            <div class="row d-flex justify-content-between">
+              <div class="col-6">Total</div>
+              <div class="col-6 text-end fw-bold" id="cart-total">$0.00</div>
+            </div>
+            <hr />
+            <button class="btn btn-danger mt-4 w-100" id="check-out">Proceed to checkout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="color_footer pt-4">
+      <div id="about" class="abount-lead text-center">
+        <div class="mx-md-5">
+          <div class="row mx-2">
+            <div class="col-6 col-md-3">
+              <h3 class="pb-2">About Us</h3>
+              <p class="text-secondary">Mauris vitae ultricies leo integer malesuada...</p>
+            </div>
+            <div class="col-6 col-md-3">
+              <h3>Account</h3>
+              <a href="" class="text-decoration-none text-secondary d-inline-block py-1">My Account</a><br>
+              <a href="cart.html" class="text-decoration-none text-secondary d-inline-block py-1">My Cart</a><br>
+              <a href="login.html" class="text-decoration-none text-secondary d-inline-block py-1">Sign in</a><br>
+              <a href="" class="text-decoration-none text-secondary d-inline-block py-1">Check out</a><br>
+            </div>
+            <div class="col-6 col-md-3">
+              <h3>Shipping</h3>
+              <a href="" class="text-decoration-none text-secondary d-inline-block py-1">New Products</a><br>
+              <a href="" class="text-decoration-none text-secondary d-inline-block py-1">Best Sellers</a><br>
+            </div>
+            <div class="col-6 col-md-3">
+              <h3>Contact Us</h3>
+              <p class="text-secondary">Phone: (+02)0154245</p>
+              <p class="text-secondary">Minya</p>
+              <p class="text-secondary">96th Street, Taha Hussein 10129</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="text-center my-5">
+        <div class="text-center fs-5 fw-bold my-5">
+          <i class="fa-brands fa-shopify"></i> SHOPPING
+        </div>
+        <p class="text-secondary">Copyright © 2025 - by tem iti .net fullsack</p>
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/cb38eca611.js" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="../../cart.js"></script>
+    <script type="module" src="../../main.js"></script>
+
+  </body>
+</html>
